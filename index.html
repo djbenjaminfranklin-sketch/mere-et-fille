@@ -11,20 +11,20 @@
         *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
         :root {
-            --cream: #faf8f5;
-            --cream-dark: #f0ece6;
-            --gold: #c9a87c;
-            --gold-light: #e0cfa8;
-            --gold-dark: #a8854e;
-            --dark: #1a1816;
-            --dark-brown: #2c2420;
+            --cream: #fffbf5;
+            --cream-dark: #faf0e2;
+            --gold: #e8a849;
+            --gold-light: #f5cb7a;
+            --gold-dark: #d4922e;
+            --dark: #2d2926;
+            --dark-brown: #d4922e;
             --text: #3a3632;
-            --text-light: #8a8480;
+            --text-light: #9a918a;
             --white: #ffffff;
-            --rouge: #c42b2b;
+            --rouge: #e05a47;
             --turquoise: #4ba8b5;
-            --rose: #e8c4b8;
-            --success: #2d8a4e;
+            --rose: #f2c4ae;
+            --success: #5cb87a;
             --radius: 16px;
             --radius-sm: 10px;
             --shadow: 0 2px 12px rgba(0,0,0,0.08);
@@ -33,7 +33,7 @@
 
         body {
             font-family: 'Inter', -apple-system, sans-serif;
-            background: #e8e4de;
+            background: #f5ead8;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -202,15 +202,15 @@
         .home-hero {
             position: relative;
             height: 380px;
-            background: linear-gradient(135deg, var(--dark-brown) 0%, #1a1510 100%);
+            background: linear-gradient(135deg, #f7a44c 0%, #e8734a 30%, #d4588a 70%, #c76bbd 100%);
             overflow: hidden;
         }
 
         .home-hero-pattern {
             position: absolute;
             inset: 0;
-            opacity: 0.04;
-            background-image: radial-gradient(circle at 1.5px 1.5px, var(--gold) 1px, transparent 0);
+            opacity: 0.08;
+            background-image: radial-gradient(circle at 1.5px 1.5px, #fff 1px, transparent 0);
             background-size: 30px 30px;
         }
 
@@ -231,7 +231,7 @@
             font-weight: 500;
             letter-spacing: 0.4em;
             text-transform: uppercase;
-            color: var(--gold);
+            color: rgba(255,255,255,0.85);
             margin-bottom: 16px;
         }
 
@@ -247,7 +247,7 @@
         .home-hero-line {
             width: 40px;
             height: 1px;
-            background: var(--gold);
+            background: rgba(255,255,255,0.6);
             margin-bottom: 14px;
         }
 
@@ -256,26 +256,27 @@
             font-weight: 300;
             letter-spacing: 0.25em;
             text-transform: uppercase;
-            color: var(--gold-light);
+            color: rgba(255,255,255,0.8);
             margin-bottom: 28px;
         }
 
         .home-hero-btn {
             padding: 12px 32px;
-            border: 1px solid var(--gold);
-            color: var(--gold);
+            border: 2px solid rgba(255,255,255,0.8);
+            color: var(--white);
             font-family: 'Inter', sans-serif;
             font-size: 10px;
             font-weight: 500;
             letter-spacing: 0.25em;
             text-transform: uppercase;
             background: none;
+            border-radius: 30px;
             cursor: pointer;
             transition: all 0.3s;
         }
 
         .home-hero-btn:active {
-            background: var(--gold);
+            background: var(--white);
             color: var(--dark);
         }
 
@@ -332,9 +333,9 @@
         }
 
         .cat-chip.active {
-            background: var(--dark-brown);
+            background: linear-gradient(135deg, #f7a44c, #e8734a);
             color: var(--white);
-            border-color: var(--dark-brown);
+            border-color: transparent;
         }
 
         .cat-chip:active { transform: scale(0.95); }
@@ -443,7 +444,7 @@
 
         /* PROMO BANNER */
         .promo-banner {
-            background: linear-gradient(135deg, var(--dark-brown), #3a2e28);
+            background: linear-gradient(135deg, #f7a44c 0%, #e8734a 100%);
             border-radius: var(--radius);
             padding: 24px;
             position: relative;
@@ -453,8 +454,8 @@
         .promo-banner-pattern {
             position: absolute;
             inset: 0;
-            opacity: 0.05;
-            background-image: radial-gradient(circle at 1.5px 1.5px, var(--gold) 1px, transparent 0);
+            opacity: 0.1;
+            background-image: radial-gradient(circle at 1.5px 1.5px, #fff 1px, transparent 0);
             background-size: 20px 20px;
         }
 
@@ -473,7 +474,7 @@
 
         .promo-banner p {
             font-size: 12px;
-            color: var(--gold-light);
+            color: rgba(255,255,255,0.85);
             margin-bottom: 16px;
             line-height: 1.5;
         }
@@ -481,14 +482,14 @@
         .promo-banner-btn {
             display: inline-block;
             padding: 10px 24px;
-            background: var(--gold);
+            background: var(--white);
             color: var(--dark);
             font-size: 10px;
             font-weight: 600;
             letter-spacing: 0.2em;
             text-transform: uppercase;
             border: none;
-            border-radius: 6px;
+            border-radius: 20px;
             cursor: pointer;
         }
 
@@ -578,9 +579,9 @@
         }
 
         .filter-chip.active {
-            background: var(--dark-brown);
+            background: linear-gradient(135deg, #f7a44c, #e8734a);
             color: var(--white);
-            border-color: var(--dark-brown);
+            border-color: transparent;
         }
 
         /* PRODUCT DETAIL */
@@ -811,10 +812,10 @@
         .add-to-cart-btn {
             flex: 1;
             height: 50px;
-            background: var(--dark-brown);
+            background: linear-gradient(135deg, #f7a44c, #e8734a);
             color: var(--white);
             border: none;
-            border-radius: var(--radius-sm);
+            border-radius: 26px;
             font-family: 'Inter', sans-serif;
             font-size: 13px;
             font-weight: 600;
@@ -829,7 +830,7 @@
 
         .add-to-cart-btn:active {
             transform: scale(0.97);
-            background: var(--gold-dark);
+            background: linear-gradient(135deg, #e8934a, #d4683e);
         }
 
         .add-to-cart-btn svg {
@@ -983,10 +984,10 @@
             margin: 20px;
             width: calc(100% - 40px);
             height: 52px;
-            background: var(--dark-brown);
+            background: linear-gradient(135deg, #f7a44c, #e8734a);
             color: var(--white);
             border: none;
-            border-radius: var(--radius-sm);
+            border-radius: 26px;
             font-family: 'Inter', sans-serif;
             font-size: 14px;
             font-weight: 600;
@@ -996,7 +997,7 @@
         }
 
         .checkout-btn:active {
-            background: var(--gold-dark);
+            background: linear-gradient(135deg, #e8934a, #d4683e);
             transform: scale(0.98);
         }
 
@@ -1010,7 +1011,7 @@
             width: 80px;
             height: 80px;
             border-radius: 50%;
-            background: linear-gradient(135deg, var(--gold), var(--gold-dark));
+            background: linear-gradient(135deg, #f7a44c, #e8734a);
             margin: 0 auto 12px;
             display: flex;
             align-items: center;
