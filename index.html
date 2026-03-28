@@ -380,13 +380,13 @@
             top: 10px;
             left: 10px;
             padding: 4px 10px;
-            background: var(--dark);
+            background: linear-gradient(135deg, #f7a44c, #e8734a);
             color: var(--white);
             font-size: 9px;
             font-weight: 500;
             letter-spacing: 0.15em;
             text-transform: uppercase;
-            border-radius: 4px;
+            border-radius: 20px;
         }
 
         .product-card-fav {
@@ -1396,12 +1396,12 @@ const products = [
         category: 'pochette',
         price: 189,
         badge: 'Best-seller',
-        color: '#c42b2b',
-        gradient: 'linear-gradient(145deg, #c42b2b 0%, #8b1a1a 100%)',
-        image: 'public/images/sac-rouge.jpg',
+        color: '#e85a5a',
+        gradient: 'linear-gradient(145deg, #fce4c7 0%, #f5d0a9 100%)',
+        image: 'public/images/PHOTO-2026-03-28-19-16-54.jpg',
         desc: 'Pochette entierement realisee au crochet a la main, ornee d\'un pompon assorti et d\'une fermeture en bambou dore. Un accessoire statement qui sublimera toutes vos tenues.',
         features: ['Fait main', 'Crochet artisanal', 'Fermoir bambou', 'Pompon assorti'],
-        colors: ['#c42b2b', '#1a1a1a', '#e8e0d4', '#c9a87c']
+        colors: ['#e85a5a', '#0e7c8c', '#1a1a1a', '#c9a87c']
     },
     {
         id: 2,
@@ -1411,67 +1411,53 @@ const products = [
         price: 229,
         badge: 'Nouveau',
         color: '#4ba8b5',
-        gradient: 'linear-gradient(145deg, #4ba8b5 0%, #2d7a85 100%)',
-        image: 'public/images/sac-turquoise.jpg',
+        gradient: 'linear-gradient(145deg, #d4f1f5 0%, #a8dde5 100%)',
+        image: 'public/images/IMG_8241.jpg',
         desc: 'Besace en daim veritable avec franges et clous en laiton dore. Un style boheme-chic irresistible, ideal pour l\'ete comme pour les soirees.',
         features: ['Daim veritable', 'Franges artisanales', 'Clous en laiton', 'Bandouliere reglable'],
-        colors: ['#4ba8b5', '#c42b2b', '#2c2420', '#c9a87c']
+        colors: ['#4ba8b5', '#e85a5a', '#c9a87c', '#1a1a1a']
     },
     {
         id: 3,
-        name: 'Cabas Noir Elegance',
+        name: 'Cabas Noir Prestige',
         type: 'Cabas en crochet',
         category: 'cabas',
         price: 279,
-        badge: null,
-        color: '#2c2420',
-        gradient: 'linear-gradient(145deg, #2c2420 0%, #111 100%)',
-        image: null,
-        desc: 'Grand cabas en crochet noir, parfait pour le quotidien ou les week-ends. Spacieux et resistant, il allie praticite et elegance avec ses finitions dorees.',
-        features: ['Fait main', 'Grande capacite', 'Anses renforcees', 'Doublure coton'],
-        colors: ['#2c2420', '#e8e0d4', '#c42b2b', '#c9a87c']
+        badge: 'Signature',
+        color: '#2c2c2c',
+        gradient: 'linear-gradient(145deg, #e8e4de 0%, #d4cfc6 100%)',
+        image: 'public/images/PHOTO-2026-03-28-19-16-53 2.jpg',
+        desc: 'Grand cabas en crochet noir avec anses structurees et finitions dorees. Spacieux et resistant, il allie praticite et elegance au quotidien.',
+        features: ['Fait main', 'Grande capacite', 'Anses renforcees', 'Finitions dorees'],
+        colors: ['#2c2c2c', '#e85a5a', '#0e7c8c', '#c9a87c']
     },
     {
         id: 4,
-        name: 'Pochette Ivoire Perle',
-        type: 'Pochette de soiree',
+        name: 'Duo Bleu & Rose',
+        type: 'Set de 2 pochettes crochet',
         category: 'pochette',
-        price: 169,
-        badge: 'Signature',
-        color: '#e8ddd0',
-        gradient: 'linear-gradient(145deg, #e8ddd0 0%, #c9b896 100%)',
-        image: null,
-        desc: 'Pochette de soiree en crochet fin, couleur ivoire nacre. Elegante et raffinee, elle est l\'accessoire ideal pour vos evenements et occasions speciales.',
-        features: ['Crochet fin', 'Chaine doree', 'Fermoir magnetique', 'Edition limitee'],
-        colors: ['#e8ddd0', '#c9a87c', '#d4a373', '#2c2420']
+        price: 299,
+        badge: 'Exclusif',
+        color: '#0e7c8c',
+        gradient: 'linear-gradient(145deg, #d4f1f5 0%, #f5d0d0 100%)',
+        image: 'public/images/PHOTO-2026-03-28-19-16-53.jpg',
+        desc: 'Duo de pochettes en crochet avec pompons assortis. Bleu canard et rose vif, deux couleurs vibrantes pour varier les plaisirs et les tenues.',
+        features: ['Lot de 2', 'Pompons assortis', 'Crochet artisanal', 'Fait main'],
+        colors: ['#0e7c8c', '#e85a5a', '#c9a87c', '#2c2c2c']
     },
     {
         id: 5,
-        name: 'Mini Sac Dore',
-        type: 'Mini bandouliere',
-        category: 'bandouliere',
-        price: 149,
+        name: 'Pochette Bicolore',
+        type: 'Pochette en crochet',
+        category: 'pochette',
+        price: 199,
         badge: 'Nouveau',
-        color: '#c9a87c',
-        gradient: 'linear-gradient(145deg, #c9a87c 0%, #a8854e 100%)',
-        image: null,
-        desc: 'Mini sac en crochet dore avec chaine fine. Le compagnon parfait pour sortir leger sans sacrifier le style. Juste assez grand pour l\'essentiel.',
-        features: ['Format compact', 'Chaine fine', 'Crochet dore', 'Fait main'],
-        colors: ['#c9a87c', '#c42b2b', '#2c2420', '#4ba8b5']
-    },
-    {
-        id: 6,
-        name: 'Besace Rose Poudre',
-        type: 'Sac bandouliere en crochet',
-        category: 'bandouliere',
-        price: 219,
-        badge: null,
-        color: '#d4a39a',
-        gradient: 'linear-gradient(145deg, #d4a39a 0%, #b87d74 100%)',
-        image: null,
-        desc: 'Besace en crochet rose poudre, douce et feminine. Avec sa bandouliere en chaine et cuir, elle apporte une touche de douceur a chaque tenue.',
-        features: ['Crochet artisanal', 'Anse chaine/cuir', 'Fermeture aimantee', 'Doublure satin'],
-        colors: ['#d4a39a', '#e8ddd0', '#2c2420', '#c9a87c']
+        color: '#0e7c8c',
+        gradient: 'linear-gradient(145deg, #c7e8ed 0%, #f5d4c7 100%)',
+        image: 'public/images/PHOTO-2026-03-28-19-16-54 2.jpg',
+        desc: 'Pochette bicolore bleu canard et rouge en crochet artisanal avec pompon. Un contraste audacieux pour les femmes qui osent la couleur.',
+        features: ['Bicolore', 'Pompon assorti', 'Crochet artisanal', 'Fait main'],
+        colors: ['#0e7c8c', '#e85a5a', '#c9a87c', '#1a1a1a']
     }
 ];
 
@@ -1523,7 +1509,7 @@ function renderCard(product, isSmall) {
 // INIT RENDERS
 function initHome() {
     document.getElementById('bestSellers').innerHTML = products.slice(0, 3).map(p => renderCard(p, false)).join('');
-    document.getElementById('newArrivals').innerHTML = products.slice(3).map(p => renderCard(p, false)).join('');
+    document.getElementById('newArrivals').innerHTML = products.slice(3, 5).map(p => renderCard(p, false)).join('');
 }
 
 function initShop(filter = 'all') {
